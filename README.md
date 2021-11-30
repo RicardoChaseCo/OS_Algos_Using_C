@@ -12,3 +12,6 @@ Short job priority (SPF) is to select a process with the shortest estimated runn
 
 4.FIFO
 FIFO page replacement algorithm always eliminates the pages that enter the memory first, that is, the pages that stay in memory for the longest time are selected to be eliminated. The algorithm is simple to implement. It only needs to connect the pages that have been transferred into memory into a queue according to the sequence, and set a replacement pointer to make it always point to the oldest page.
+
+5.LRU Page Replacement
+LRU page replacement algorithm is based on the usage of the page after being transferred into memory. This algorithm endows each page with an access field to record the time that a page has experienced since it was last visited. When a page needs to be eliminated, the page with the largest time value is selected for elimination.![image](https://user-images.githubusercontent.com/79492842/143991758-1473b82a-d290-45f1-8ee2-6f31122bfa07.png)
